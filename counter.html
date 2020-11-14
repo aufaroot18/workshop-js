@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Couter App</title>
+	<style>
+		body {
+			background-color: #ecf0f1;
+			color: #2c3e50;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<h2>Counter App</h2>
+		<h3 class="result">0</h3>
+		<button class="add">+</button>
+		<button class="min">-</button>
+	</main>
+
+	<script>
+		let result = document.querySelector(".result");
+		const add = document.querySelector(".add");
+		const min = document.querySelector(".min");
+
+
+		add.addEventListener("click", function() {
+			result.innerHTML = parseInt(result.innerHTML) + 1;
+		})
+
+		min.addEventListener("click", function() {
+			result.innerHTML = parseInt(result.innerHTML) - 1;
+		})
+	</script>
+</body>
+</html>

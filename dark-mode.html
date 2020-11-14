@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dark Mode</title>
+	<style>
+		body {
+			background-color: #ecf0f1;
+			color: #2c3e50;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<button>Dark Mode</button>
+		<h2>Dark Mode</h2>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quisquam fugiat dignissimos maxime modi adipisci non, dolor tempora, eius beatae nam voluptates ullam! Eos, obcaecati soluta officiis corporis tempora, esse?</p>
+	</main>
+
+	<script>
+		const btn = document.querySelector("button");
+		const body = document.querySelector("body");
+		let isLightMode = true;
+
+		btn.addEventListener("click", function() {
+			if (isLightMode) {
+				body.style.backgroundColor = "#2c3e50";
+				body.style.color = "#ecf0f1";
+				btn.innerHTML = "Light Mode";
+				isLightMode = false;
+			}
+
+			else {
+				body.style.backgroundColor = "#ecf0f1";
+				body.style.color = "#2c3e50";
+				btn.innerHTML = "Dark Mode";
+				isLightMode = true;
+			}
+		})
+	</script>
+</body>
+</html>
