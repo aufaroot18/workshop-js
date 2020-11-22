@@ -12,3 +12,8 @@ Workskhop JavaScript
 
 - Demo: [Dark Mode](https://aufaroot18.github.io/workshop-js/dark-mode.html)
 - Source Code: [Dark Mode](https://github.com/aufaroot18/workshop-js/tree/workshop-1)
+
+### Kurs App
+
+- Demo: [Kurs](https://aufaroot18.github.io/workshop-js/kurs.html)
+- Source Code: [Dark Mode](https://github.com/aufaroot18/workshop-js/tree/workshop-2)
