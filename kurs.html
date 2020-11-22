@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			color: #2c3e50;
+			min-height: 90vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			background-color: #ecf0f1;
+			padding: 1em;
+			max-width: 500px;
+			width: 100%;
+			border-radius: 1em;
+		}
+
+		input, select, button {
+			margin: 1em;
+			padding: 1em;
+			border-radius: 1em;
+			outline: none;
+			border: 1px solid #bdc3c7;
+		}
+
+		.result {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h2>Kurs Mata Uang</h2>
+	<div class="container">
+		<input type="number" class="input" placeholder="Masukan Jumlah">
+		<select class="kurs">
+			<option value="usd">USD - 13.000</option>
+			<option value="eur">EUR - 16.000</option>
+			<option value="sgd">SGD - 10.000</option>
+		</select>
+		<button class="hitung">Hitung</button>
+		<p class="result">Hasil: </p>
+	</div>
+
+	<script>
+		const input = document.querySelector(".input");
+		const kurs = document.querySelector(".kurs");
+		const btnHitung = document.querySelector(".hitung");
+		const result = document.querySelector(".result");
+
+		btnHitung.addEventListener("click", function() {
+			if (kurs.value == "usd") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 13000;
+			}
+
+			else if (kurs.value == "eur") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 16000;
+			}
+
+			else if (kurs.value == "sgd") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 10000;
+			}
+		})
+	</script>
+</body>
+</html>
